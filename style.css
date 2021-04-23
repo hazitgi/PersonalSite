@@ -148,9 +148,9 @@ body {
 }
 
 .card_services {
-  min-height: 690px;
+  min-height: 700px;
   height: auto;
-  width: 500px;
+  width: 550px;
   padding: 10px;
 
   /* border: 1px solid rgb(255, 166, 0); */
@@ -287,7 +287,7 @@ margin-right: auto; */
 .form-group i {
   position: absolute;
   right: 5%;
-  top: 42px;
+  top: 44px;
   visibility: hidden;
 }
 
@@ -304,38 +304,6 @@ margin-right: auto; */
   border: #777;
 }
 
-/* input border  */
-.form-group.success > .input {
-  border-color: #2ecc71;
-}
-
-.form-group.error > .input {
-  border-color: #e74c3c;
-}
-
-.form-group.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-/* Error Message */
-.form-group small {
-  color: #e74c3c;
-  position: absolute;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-group.error small {
-  visibility: visible;
-}
-
-/* input type number spin button hide */
-input ::-webkit-outer-spin-button,
-input ::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
 .ml6 {
   position: relative;
@@ -368,8 +336,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.top-sroll-btn{
-    /* width: 40px;
+.top-sroll-btn {
+  /* width: 40px;
     height: 40px;
     background-color: #dbafaf;
     position: fixed;
@@ -377,24 +345,37 @@ input[type="number"] {
     bottom: 30px;
     font-size: 30px;
     opacity: .5; */
-    visibility: hidden;
+  visibility: hidden;
 }
-.TopSrollBtn-active{
-    visibility: visible;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    font-size: 30px;
-    opacity: .5;
-    transition: border-radius .5s;
+.TopSrollBtn-active {
+  visibility: visible;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: all 1s;
 }
-.TopSrollBtn-active:hover{
-    opacity: 1;
-    color: rgb(197, 211, 7);
-    border-radius: 50%;
-    background-color: rgb(0, 0, 0);
+.TopSrollBtn-active:hover {
+  opacity: 1;
+  color: rgb(197, 211, 7);
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
 }
 
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control.input.error {
+  border-color: #e74c3c;
+}
+.form-control.input.valid {
+  border-color: #2ecc71;
+}
